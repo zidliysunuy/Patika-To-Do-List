@@ -1,0 +1,173 @@
+* {
+    box-sizing: border-box;
+  }
+  body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url(https://media.istockphoto.com/vectors/paper-on-the-wooden-wall-vector-id137439693?k=20&m=137439693&s=612x612&w=0&h=zicXphGj7xbDwZVRLPo2MN22adAIwKbTZcl133vjJrw=);
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: 1920px 1080px;
+  }
+  
+  ul {
+    margin: 0;
+    padding: 0;  
+    
+  }
+  ul li p {
+    margin: 0;
+    padding: 0;
+  }
+  
+  ul li {
+    display: flex; 
+    cursor: pointer;
+    position: relative;
+    padding: 12px 8px 12px 40px;
+    background: #eee;
+    font-size: 18px;
+    transition: 0.2s;
+    list-style-type: none;
+    border-radius: 15px;
+    text-align: center;
+  
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  ul li:nth-child(odd) {
+    background: #f9f9f9;
+  }
+  
+  ul li:hover {
+    background: #ddd;
+  }
+  
+  ul li.checked {
+    background: #276678;
+    color: #fff;
+    text-decoration: line-through;
+  }
+  
+  ul li.checked::before {
+    content: "";
+    position: absolute;
+    border-color: #fff;
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    top: 10px;
+    left: 16px;
+    transform: rotate(45deg);
+    height: 15px;
+    width: 7px;
+  }
+  
+  .close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-right: -1px;
+  
+  }
+  h1{
+    font-family: 'Hurricane', cursive;
+    font-size: 64px;
+    color: rgb(0, 0, 0);
+  }
+  
+  .close:hover {
+    background-color: #f70101;
+    color: white;
+  
+  }
+  
+  .header {
+    
+    background-color: hsla(0,100%,50%,0.5);
+    padding: 30px 40px;
+    color: rgb(0, 0, 0);
+    text-align: center; 
+    border-radius: 20px;  
+    font-size: 20px;  
+  }
+  
+  .header:after {
+    content: "";
+    display: table;
+    clear: both;
+    
+  }
+  
+  input {
+    margin: 0;
+    border: none;
+    border-radius: 0;
+    width: 75%;
+    padding: 10px;
+    float: left;
+    font-size: 16px;
+    border-start-start-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+  
+  .button {
+    padding: 10px;
+    width: 25%;
+    background: #d9d9d9;
+    color: #555;
+    float: left;
+    text-align: center;
+    font-size: 1em;
+    cursor: pointer;
+    transition: 0.3s;
+    border-top-right-radius: 10px ;
+    border-bottom-right-radius: 10px;
+    color: black;
+  }
+  
+  .button:hover {
+    background-color: #bbb;
+  }
+  
+  ul li button {
+    color:rgb(0, 0, 0);
+    margin-top: 1px;
+    margin-right: 2px;
+    border-radius: 15px; 
+  }
+  #deleteButton {
+    padding: 10px;
+  }
+  .down a:link{
+    text-decoration: none;
+  }
+  .down a:hover {
+    text-decoration: none;
+  }
+  .down a:visited {
+    text-decoration: none;
+    
+  }
+  .down a:active {
+    text-decoration: none;
+  }
+  .addList {
+    display:  flex;
+    justify-content: flex-start;
+  }
+  .edit-btn{
+    background: transparent;
+    border-color: transparent;
+    cursor: pointer;
+    font-size: 0.7rem;
+    margin: 0 0.15rem;
+    transition: var(--transition);
+  }
+  .edit-btn {
+    color: var(--clr-green-light);
+  }
+  .edit-btn:hover {
+    color: var(--clr-green-dark);
+  }
